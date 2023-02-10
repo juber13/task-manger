@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+
+html,body{
+  margin:0;
+  padding:0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing:border-box;
+}
+
+.main{
+  width:80%;
+  /* margin:2rem auto; */
+  position: relative;
+}
+
+
+.header{
+  width:100%;
+  text-align:center;
+}
+
+.header h2 , i{
+  font-size:2rem;
+}
+
+.btn-container{
+  width:100%;
+  margin:1rem;
+}
+
+.btn-container button{
+  display:flex;
+  align-items:Center;
+  justify-content:center;
+}
+
+
+.task-bar{
+  width:100%;
+  background:#fff;
+  height:500px;
+  display:flex;
+}
+
+.task-bar .box{
+  width:400px;
+  height:auto;
+  margin:1rem ;
+  border-radius:0.25rem;
+}
+
+.start{
+  background: #ff80ff;
+}
+
+.in-process{
+  background: #8080ff
+}
+
+h2{
+  font-weight: bold;
+}
+
+.in-review{
+  background: #ff751a;
+}
+.done{
+  background: #1aff1a;
+}
+
+.heading h2{
+  font-size: 1.3rem;
+  text-transform:uppercase;
+}
+
+.heading{
+  padding-top:1rem;
+  text-align:center;
+}
+
+.container-fluid{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: translateY(-180%);
+    transition: transform 0.3s ease;
+    background-color: rgba(0,0,0,0.4);
+    z-index: 1;
+}
+
+.active{
+    transform: translateY(0);
+}
+
+.modal-dialog{
+    max-width: 500px;
+    background-color: #ddd;
+    padding: 1rem;
+    margin-top: 3rem;
+}
+
+.btn-warning{
+    margin: 0.5rem;
+}
+
+.items{
+    background-color: #ddd;
+    width: 90%;
+    max-width: 300px;
+    margin: 2px auto;
+    display: flex;
+    cursor: move; 
+    padding: 0.5rem;
+}
+
+.items.dragging{
+  opacity: 0.1;
+}
+
+.box-shadow{
+  box-shadow:rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;;
+}
+
+.items ul{
+    margin: 10px;
+}
+
+
+.hold{
+    border: solid #ccc;
+}
+
+.hovered{
+    background-color: #8080ff;
+    border-style: dashed;
+}
+
+.invisible{
+    display: none;
+}
+
+
+.active{
+  display: block;
+}
