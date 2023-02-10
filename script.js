@@ -1,4 +1,4 @@
-=const addTaskBtn = document.querySelector('#add-btn');
+const addTaskBtn = document.querySelector('#add-btn');
 const closeModalBtn = document.querySelector('.btn-warning');
 
 const saveBtn = document.querySelector('.btn-primary');
